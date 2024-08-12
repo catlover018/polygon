@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+#include "testlib.h"
+
+using namespace std;
+
+
+int main(int argc, char* argv[])
+{
+    cin.tie(0)->sync_with_stdio(0);
+    registerGen(argc, argv, 1);
+
+    int startN = opt<int>("startN");
+    int goalN = opt<int>("goalN");
+
+    int N = rnd.next(startN, goalN);
+    cout << N;
+    cout << '\n';
+}
+
